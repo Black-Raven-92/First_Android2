@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.calculate_main);
-        if (calc == null) calc = new Calculate();
-        else calc = (Calculate) savedInstanceState.getParcelable("calc");
         button0 = findViewById(R.id.button0);
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
@@ -43,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
         button_multiply = findViewById(R.id.button_multiply);
         button_all_clear = findViewById(R.id.button_all_clear);
         textView = findViewById(R.id.textView);
+        if (savedInstanceState == null) {
+            calc = new Calculate();
+        }
+        else {
+            calc = (Calculate) savedInstanceState.getParcelable("calc");
+            textView.setText(calc.text);
+        }
+
 
 
         button0.setOnClickListener(v -> calc.setText(textView, button0));
@@ -79,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        calc = (Calculate) savedInstanceState.getParcelable("calc");
+
     }
 
     @Override
