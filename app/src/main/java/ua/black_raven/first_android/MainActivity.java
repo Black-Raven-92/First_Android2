@@ -13,7 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     Button button1, button2, button3,
             button4, button5, button6, button7, button8, button9, button0, button_add,
-            button_min, button_div, button_multiply, button_equals, button_all_clear;
+            button_min, button_div, button_multiply, button_equals, button_all_clear, button_dot;
+    private final int[] buttonsID = new int []{R.id.button0, R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6,
+                R.id.button7, R.id.button8, R.id.button9};
 
     TextView textView;
     Calculate calc;
@@ -22,44 +24,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.calculate_main);
-        button0 = findViewById(R.id.button0);
-        button1 = findViewById(R.id.button1);
-        button2 = findViewById(R.id.button2);
-        button3 = findViewById(R.id.button3);
-        button4 = findViewById(R.id.button4);
-        button5 = findViewById(R.id.button5);
-        button6 = findViewById(R.id.button6);
-        button7 = findViewById(R.id.button7);
-        button8 = findViewById(R.id.button8);
-        button9 = findViewById(R.id.button9);
         button_add = findViewById(R.id.button_add);
         button_div = findViewById(R.id.button_div);
         button_min = findViewById(R.id.button_min);
         button_equals = findViewById(R.id.button_equals);
         button_multiply = findViewById(R.id.button_multiply);
         button_all_clear = findViewById(R.id.button_all_clear);
+        button_dot = findViewById(R.id.button_dot);
         textView = findViewById(R.id.textView);
+        setNumberButtonClick();
         if (savedInstanceState == null) {
             calc = new Calculate();
-        }
-        else {
+        } else {
             calc = (Calculate) savedInstanceState.getParcelable("calc");
             textView.setText(calc.text);
         }
 
 
 
-        button0.setOnClickListener(v -> calc.setText(textView, button0));
-        button1.setOnClickListener(v -> calc.setText(textView, button1));
-        button2.setOnClickListener(v -> calc.setText(textView, button2));
-        button3.setOnClickListener(v -> calc.setText(textView, button3));
-        button4.setOnClickListener(v -> calc.setText(textView, button4));
-        button5.setOnClickListener(v -> calc.setText(textView, button5));
-        button6.setOnClickListener(v -> calc.setText(textView, button6));
-        button7.setOnClickListener(v -> calc.setText(textView, button8));
-        button9.setOnClickListener(v -> calc.setText(textView, button9));
+
         button_all_clear.setOnClickListener(v -> calc.Clear(textView));
 
         button_add.setOnClickListener(v ->
@@ -79,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             if (textView.getText().length() != 0) calc.Dev(textView);
         });
         button_equals.setOnClickListener(v -> calc.Equals(textView));
+        button_dot.setOnClickListener(v->calc.setDot(textView));
 
     }
 
@@ -92,5 +77,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putParcelable("calc", calc);
+    }
+
+    private void setNumberButtonClick() {
+        for (int i = 0; i < buttonsID.length; i++) {
+            findViewById(buttonsID[i]).setOnClickListener(v -> {
+                Button btn = (Button) v;
+                calc.setText(textView,btn);
+            });
+        }
     }
 }

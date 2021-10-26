@@ -93,8 +93,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
+        android:layout_gravity="left"
+        android:gravity="left"
         android:background="@color/grey_dark"
         android:orientation="horizontal"
 
@@ -141,6 +141,7 @@
             android:layout_margin="6dp"
             android:backgroundTint="@color/grey"
             android:text="AC"
+            android:layout_weight="1"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -151,7 +152,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey_dark"
-        android:gravity="center"
+        android:gravity="left"
 
         android:orientation="horizontal">
 
@@ -161,6 +162,7 @@
             android:layout_height="80dp"
             android:textSize="20sp"
             android:layout_margin="6dp"
+
             android:backgroundTint="@color/grey"
             android:text="4"
             android:textColor="@color/black"
@@ -197,6 +199,7 @@
             android:layout_margin="6dp"
             android:backgroundTint="@color/grey"
             android:text="="
+            android:layout_weight="1"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -218,6 +221,7 @@
             android:layout_margin="6dp"
             android:backgroundTint="@color/grey"
             android:text="7"
+            android:layout_weight="1"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -234,6 +238,7 @@
             android:text="8"
             android:textSize="20sp"
             android:textColor="@color/black"
+            android:layout_weight="1"
             android:textStyle="bold" />
 
         <Button
@@ -245,6 +250,7 @@
             android:text="9"
             android:textSize="20sp"
             android:textColor="@color/black"
+            android:layout_weight="1"
             android:textStyle="bold" />
 
         <Button
@@ -255,8 +261,21 @@
             android:backgroundTint="@color/grey"
             android:text="0"
             android:textSize="20sp"
+            android:layout_weight="1"
             android:textColor="@color/black"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_dot"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="6dp"
+            android:textSize="20sp"
+            android:backgroundTint="@color/grey"/>
 
     </LinearLayout>
 

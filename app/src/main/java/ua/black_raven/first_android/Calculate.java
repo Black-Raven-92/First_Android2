@@ -11,7 +11,7 @@ import org.w3c.dom.Text;
 
 public class Calculate implements Parcelable {
     float firstValue, secondValue;
-    boolean plus, minus, div, multiply;
+    boolean plus, minus, div, multiply, dot;
     String text;
 
     public Calculate() {
@@ -109,6 +109,22 @@ public class Calculate implements Parcelable {
         div = in.readByte() != 0;
         multiply = in.readByte() != 0;
         text = in.readString();
+    }
+    public void setDot(TextView textView){
+        for (int i = 0; i < textView.length(); i++) {
+            if(textView.getText().charAt(i)=='.'){
+                dot=true;
+                break;
+
+            }else dot=false;
+
+
+        }
+        if(!dot) {
+            this.text=(textView.getText()+".");
+            textView.setText(this.text);
+        }
+
     }
 
     public static final Creator<Calculate> CREATOR = new Creator<Calculate>() {

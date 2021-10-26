@@ -74,18 +74,33 @@
             android:layout_margin="5dp"
             />
         <Button
-            android:id="@+id/button_all_clear"
+            android:id="@+id/button_dot"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:backgroundTint="@color/yellow_dark"
+            android:backgroundTint="@color/grey"
             android:layout_marginTop="2dp"
-            android:text="AC"
+            android:textStyle="bold"
+            android:text="."
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_gravity="center"
-            android:textStyle="bold"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/button_all_clear"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:layout_margin="5dp"/>
+            android:backgroundTint="@color/yellow_dark"
+            android:text="AC"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
 
 
     </LinearLayout>
