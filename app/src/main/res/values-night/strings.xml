@@ -1,6 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">First_Android</string>
-    <string name="text_plus">+</string>
     <string name="text_min">-</string>
     <string name="text_dev">/</string>
     <string name="text_multi">*</string>

@@ -15,8 +15,8 @@ public class Calculate implements Parcelable {
     String text;
 
     public Calculate() {
-        firstValue = 0f;
-        secondValue = 0f;
+        firstValue = 0.0f;
+        secondValue = 0.0f;
         plus = false;
         minus = false;
         div = false;

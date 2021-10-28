@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="texSize_default">20sp</dimen>
+    <dimen name="textSize_editText">50sp</dimen>
+    <dimen name="textSize_operand">25sp</dimen>
+    <dimen name="margin_operand">1dp</dimen>
+    <dimen name="textSize_buttons">20sp</dimen>
+    <dimen name="margin_btn">6dp</dimen>
+    <dimen name="margin_operan_land">5dp</dimen>
+</resources>
