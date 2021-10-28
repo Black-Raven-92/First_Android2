@@ -3,18 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23453947368421052" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/drawable-xxxhdpi/button.xml" value="0.37083333333333335" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/drawable/button.xml" value="0.37083333333333335" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/drawable/custom_button.xml" value="0.37135416666666665" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.10092592592592593" />
-        <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout-land/calculate_main.xml" value="0.25" />
+        <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout-land/calculate_main.xml" value="0.22" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout/activity2.xml" value="0.33" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout/activity_main2.xml" value="1.0" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout/activity_main3.xml" value="0.33" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout/calc_new.xml" value="0.33" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout/calculate.xml" value="0.35520833333333335" />
-        <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout/calculate_main.xml" value="0.33" />
+        <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout/calculate_main.xml" value="0.25" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout/layout2.xml" value="0.3134057971014493" />
         <entry key="..\:/Users/Black_Raven92/AndroidStudioProjects/First_Android/app/src/main/res/layout/test.xml" value="0.35520833333333335" />
       </map>

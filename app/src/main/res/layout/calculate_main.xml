@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,15 +15,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#C1BFBF"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <EditText
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:gravity="end"
-            android:textSize="50sp"
+            android:textSize="@dimen/textSize_editText"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -32,61 +32,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey_dark"
-
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_add"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="1dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/yellow_dark"
-            android:text="+"
-            android:textSize="15sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            style="@style/My_style"
+            android:text="@string/text_plus"
+            android:textSize="@dimen/textSize_operand"
+
 
 
            />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_min"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="1dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/yellow_dark"
-            android:text="-"
-            android:textSize="15sp"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:text="@string/text_min"
+            style="@style/My_style" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_div"
-            android:backgroundTint="@color/yellow_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="1dp"
             android:layout_weight="1"
-            android:text="/"
-            android:textSize="15sp"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:text="@string/text_dev"
 
-        <Button
+            style="@style/My_style"/>
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_multiply"
-            android:backgroundTint="@color/yellow_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:textSize="15sp"
-            android:text="*"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
 
+            android:layout_weight="1"
+            android:text="@string/text_multi"
+            style="@style/My_style"/>
 
     </LinearLayout>
 
@@ -100,182 +86,100 @@
 
         >
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button1"
+            android:layout_margin="@dimen/margin_btn"
+            android:text="@string/text_btn1"
+            style="@style/my_style_numbers"
+            />
 
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:backgroundTint="@color/grey"
-            android:text="1"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:backgroundTint="@color/grey"
-            android:textSize="20sp"
-            android:text="2"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:text="@string/text_btn2"
+            style="@style/my_style_numbers"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:textSize="20sp"
-            android:backgroundTint="@color/grey"
-            android:text="3"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:text="@string/text_btn3"
+            style="@style/my_style_numbers"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_all_clear"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:backgroundTint="@color/grey"
-            android:text="AC"
             android:layout_weight="1"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:text="@string/tetx_btnAC"
+            style="@style/my_style_numbers"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/grey_dark"
+
         android:gravity="left"
+        android:background="@color/grey_dark"
 
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:textSize="20sp"
-            android:layout_margin="6dp"
+            android:text="@string/text_btn4"
+            style="@style/my_style_numbers"/>
 
-            android:backgroundTint="@color/grey"
-            android:text="4"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button5"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:textSize="20sp"
+            android:text="@string/text_btn5"
+            style="@style/my_style_numbers"/>
 
-            android:backgroundTint="@color/grey"
-            android:text="5"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button6"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:textSize="20sp"
+            android:text="@string/text_btn6"
+            style="@style/my_style_numbers"/>
 
-            android:backgroundTint="@color/grey"
-            android:text="6"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_equals"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:backgroundTint="@color/grey"
-            android:text="="
+            android:text="@string/tetx_btnequals"
             android:layout_weight="1"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            style="@style/my_style_numbers"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/grey_dark"
         android:gravity="center"
+        android:background="@color/grey_dark"
 
         >
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button7"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:backgroundTint="@color/grey"
-            android:text="7"
+            android:text="@string/tetx_btn7"
             android:layout_weight="1"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            style="@style/my_style_numbers" />
 
-
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button8"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:backgroundTint="@color/grey"
-            android:text="8"
-            android:textSize="20sp"
-            android:textColor="@color/black"
+            android:text="@string/tetx_btn8"
             android:layout_weight="1"
-            android:textStyle="bold" />
+            style="@style/my_style_numbers"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button9"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:backgroundTint="@color/grey"
-            android:text="9"
-            android:textSize="20sp"
-            android:textColor="@color/black"
+            android:text="@string/text_btn9"
             android:layout_weight="1"
-            android:textStyle="bold" />
+            style="@style/my_style_numbers"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button0"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="6dp"
-            android:backgroundTint="@color/grey"
-            android:text="0"
-            android:textSize="20sp"
+            android:text="@string/text_btn0"
             android:layout_weight="1"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            style="@style/my_style_numbers"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_dot"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
             android:layout_weight="1"
-            android:text="."
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_margin="6dp"
-            android:textSize="20sp"
-            android:backgroundTint="@color/grey"/>
+            android:text="@string/text_btndot"
+            style="@style/my_style_numbers"/>
 
     </LinearLayout>
 

@@ -9,7 +9,9 @@
 
     android:gravity="bottom"
     android:orientation="vertical"
-    tools:visibility="visible">
+    tools:visibility="visible"
+
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,71 +36,34 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/grey_dark">
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:layout_marginTop="2dp"
-            android:textStyle="bold"
-            android:text="1"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            />
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:layout_marginTop="2dp"
-            android:textStyle="bold"
-            android:text="2"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            />
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:layout_marginTop="2dp"
-            android:textStyle="bold"
-            android:text="3"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            />
-        <Button
-            android:id="@+id/button_dot"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:layout_marginTop="2dp"
-            android:textStyle="bold"
-            android:text="."
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_margin="5dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button1"
+            style="@style/my_style_number_land"
+            android:text="@string/text_btn1"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button2"
+            style="@style/my_style_number_land"
+            android:text="@string/text_btn2"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button3"
+            android:text="@string/text_btn3"
+            style="@style/my_style_number_land"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_dot"
+            android:text="@string/text_btndot"
+            style="@style/my_style_number_land"/>
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_all_clear"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/yellow_dark"
-            android:text="AC"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="@string/tetx_btnAC"
+            style="@style/My_style_land"
+            />
 
 
 
@@ -110,85 +75,39 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/grey_dark">
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
-            android:textStyle="bold"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:layout_marginTop="2dp"
-            android:text="4"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
+
+            android:text="@string/text_btn4"
+
+            style="@style/my_style_number_land"
             />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button5"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:layout_marginTop="2dp"
-            android:textStyle="bold"
-            android:text="5"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
+            android:text="@string/text_btn5"
+            style="@style/my_style_number_land"
             />
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button6"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:layout_marginTop="2dp"
-            android:text="6"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
+            android:text="@string/text_btn6"
+            style="@style/my_style_number_land"
             />
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_equals"
-            android:textStyle="bold"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:layout_marginTop="2dp"
-            android:text="="
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
+            android:text="@string/tetx_btnequals"
+            style="@style/my_style_number_land"
             />
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_add"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/yellow_dark"
-            android:layout_marginTop="2dp"
-            android:text="+"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:textStyle="bold"
+            android:text="@string/text_plus"
             android:layout_weight="1"
-            android:layout_margin="5dp"/>
-        <Button
+            style="@style/My_style_land"/>
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_min"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/yellow_dark"
-            android:layout_marginTop="2dp"
-            android:text="-"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:textStyle="bold"
+            android:text="@string/text_min"
             android:layout_weight="1"
-            android:layout_margin="5dp"/>
+            style="@style/My_style_land"/>
 
     </LinearLayout>
 
@@ -201,81 +120,33 @@
         android:background="@color/grey_dark"
         >
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button7"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:text="7"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginTop="2dp"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
+            android:text="@string/tetx_btn7"
+            style="@style/my_style_number_land"
             />
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button8"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:layout_marginTop="2dp"
-            android:text="8"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:layout_margin="5dp"/>
-        <Button
+            android:text="@string/tetx_btn8"
+            style="@style/my_style_number_land"/>
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button9"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:text="9"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:textStyle="bold"
-            android:layout_margin="5dp"/>
-        <Button
+            android:text="@string/text_btn9"
+            style="@style/my_style_number_land"/>
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button0"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/grey"
-            android:text="0"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:textStyle="bold"
-            android:layout_margin="5dp"/>
-        <Button
+            android:text="@string/text_btn0"
+            style="@style/my_style_number_land"/>
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_multiply"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/yellow_dark"
-            android:text="*"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:textStyle="bold"
+            android:text="@string/text_multi"
             android:layout_weight="1"
-            android:layout_margin="5dp"/>
-        <Button
+            style="@style/My_style_land"/>
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_div"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:backgroundTint="@color/yellow_dark"
-            android:layout_marginTop="2dp"
-            android:text="/"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:textStyle="bold"
+            android:text="@string/text_dev"
             android:layout_weight="1"
-            android:layout_margin="5dp"/>
+            style="@style/My_style_land"/>
     </LinearLayout>
 
 </LinearLayout>
